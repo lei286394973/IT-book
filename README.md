@@ -1,6 +1,6 @@
-—— 技术储备
+# 技术储备
 
-Node.js
+## Node.js
 1. NodeJS程序是以单进程形式运行, 可以创建多个子进程用于运行多个实例，负载均衡，提高效率
 2. 微服务提高部署效率，不用牵一发动全身。甚至可以使用不同语言开发，独立部署，独立维护，解耦业务
 3. Node.js 入门：https://github.com/ElemeFE/node-interview/tree/master/sections/zh-cn
@@ -14,7 +14,7 @@ Node.js
     3. url          req.params.name
 9. 使用淘宝的源：npm install -g cnpm --registry=https://registry.npm.taobao.org
 
-Express
+## Express
 1. Express 中文文档：http://expressjs.com/zh-cn/
 2. 安装express项目生成器   npm install express-generator -g
 3. 安装进程管理器   npm install supervisor -g
@@ -27,13 +27,13 @@ Express
 10. 微博实例  https://cnodejs.org/topic/53f23e198f44dfa35129c43b
 11. pug 模板教程：https://github.com/pugjs/pug-zh-cn/blob/master/Readme_zh-cn.md
 
-Express-session
+## Express-session
 1. 官网：https://github.com/expressjs/session/blob/master/README.md
 2. 安装：npm install express-session
 3. session的store：https://github.com/tj/connect-redis
 
 
-Passport
+## Passport
 1. 官网    http://passportjs.org/docs
 2. 安装   npm install passport
 3. 配置    http://passportjs.org/docs/configure
@@ -47,17 +47,17 @@ Passport
     - req.user
 
 
-Mocha
+## Mocha
 1. 官网：http://mochajs.org/#installation
 
 
-JWT
+## JWT
 
 
-Koa
+## Koa
 
 
-mongodb
+## mongodb
 1.  官网  https://www.mongodb.com/
 2.  mac安装：
     1.  更新 brew update
@@ -97,7 +97,7 @@ mongodb
         3.  db.auth('codoonhealth', 'ch20170801')
 
 
-mongoose
+## mongoose
 1. 官方文档：http://mongoosejs.com/docs/guide.html
 2. schema —> model —> entry
 3. schema可以自定义一些方法
@@ -109,7 +109,7 @@ mongoose
 9. population 使用：https://segmentfault.com/a/1190000002727265
 
 
-VUE
+## VUE
 1. 官网：https://cn.vuejs.org/v2/guide/
 2. computed属性多用于缓存数据，虽然可以用method代替，但是method会每次都要计算一遍
 3. 为元素添加key属性可以防止vue重复引用这个元素
@@ -124,34 +124,34 @@ VUE
 9. vue技术栈归纳与精粹 https://uinika.github.io/2017/12/03/web/vue/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
 
 
-VUEX
+## VUEX
 1. 官网：https://vuex.vuejs.org/zh-cn/intro.html
 2.  mutations 同步执行，store.commit('increment') 提交
 3.  actions 异步执行，store.dispatch('incrementAsync') 提交，最终还是要提交mutations
 
 
-Vue-Router
+## Vue-Router
 1. 官网：https://router.vuejs.org/zh-cn/
 
 
-Vue-Element
+## Vue-Element
 1. 官网：http://element.eleme.io/#/zh-CN/component/installation
 
 
-Vue-iView
+## Vue-iView
 1. 官网：https://www.iviewui.com/docs/guide/install
 
 
-WEEX
+## WEEX
 
 
-Reactjs
+## Reactjs
 1. 官方文档：https://facebook.github.io/react/docs/installation.html
 2. 事件绑定   this.handleClick = this.handleClick.bind(this);
 3.  民间文档：http://www.zcfy.cc/article/all-the-fundamental-react-js-concepts-jammed-into-this-single-medium-article-4030.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
 
 
-Redux
+## Redux
 1. 官方中文文档：http://cn.redux.js.org/index.html
 2. 阮一峰系列文档：
     1. http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html
@@ -165,21 +165,21 @@ Redux
     5. combineReducers 方法用于拆分 reducer
 
 
-React-Router
+## React-Router
 1. 中文文档：https://react-guide.github.io/react-router-cn/
 2. 阮一峰文档：http://www.ruanyifeng.com/blog/2016/05/react_router.html
 
 
-ReactNative
+## ReactNative
 
 
-RxJS
+## RxJS
 1. http://cn.rx.js.org/
 
-Sass
+## Sass
 
 
-Webpack
+## Webpack
 1. webpack 入门：http://www.jianshu.com/p/42e11515c10f
 2. 官网：https://doc.webpack-china.org/
 3. webpack多页架构：https://segmentfault.com/a/1190000006843916
@@ -187,10 +187,10 @@ Webpack
 5. 深入浅出：http://webpack.wuhaolin.cn/
 
 
-gulp
+## gulp
 
 
-PM2
+## PM2
 1. 安装  npm install pm2 -g 
 2. 启动服务  pm2 start bin/www 
 3. 服务列表  pm2 list
@@ -210,7 +210,7 @@ PM2
     2.  pm2 set pm2-logrotate:retain 10  设置只保留10个日志
     3.  pm2 set pm2-logrotate:max_size 100M  设置单个文件大小 
 
-node.js 部署
+## node.js 部署
 1. yum install nodejs
 2. 添加环境变量 
 3. 克隆项目：git clone https://git.coding.net/codoonhealth/ch_node.git
@@ -243,29 +243,29 @@ node.js 部署
     5. 查看各个项目资源占用情况：pm2 monit
 
 
-Nginx
+## Nginx
 1. 官网   http://nginx.org/en/docs/beginners_guide.html
 2. nginx 做静态文件处理，负载均衡，虚拟域名
 
-ES6
+## ES6
 1. ES6入门：http://es6.ruanyifeng.com/
 
 
-Selenium + phantomjs
+## Selenium + phantomjs
 1. 爬虫：https://cuiqingcai.com/2577.html
 2. 安装phantomjs:
     1.  cnpm install phantomjs 需要翻墙
     2.  cnpm install phantom
 
 
-Chromeless
+## Chromeless
 
 
-微信小程序
+## 微信小程序
 1. 官网 https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017526
 
 
-Golang
+## Golang
 1. 官网指南：https://tour.go-zh.org/welcome/1
 2. go入门：http://wiki.jikexueyuan.com/project/the-way-to-go/preface.html
 3. go详细指南：https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md
@@ -277,14 +277,14 @@ Golang
 9. interface也是可以嵌入
 
 
-Gorm
+## Gorm
 1. 官网：http://jinzhu.me/gorm/
 
 
-Gin
+## Gin
 
 
-Glide
+## Glide
 1. go项目的依赖包管理 ：https://github.com/Masterminds/glide
 2. 进入项目中，执行 glide create 命令，会初始化项目生成 glide.yaml
 3.  glide get github.com/Masterminds/cookoo  使用此命令安装第三方依赖包，会自动更改 glide.yaml
@@ -296,7 +296,7 @@ Glide
     2. https://gocn.io/article/393
 
 
-Gopm
+## Gopm
 1.  https://github.com/gpmgo/gopm
 2.  go get -u github.com/gpmgo/gopm  拿到可执行文件
 3.  将 上面的可执行文件复制到 $GOPATH/bin ，免得每次使用都要带上全路径
@@ -307,14 +307,14 @@ Gopm
 8.  详细文档：https://github.com/gpmgo/docs/blob/master/zh-CN/README.md
 
 
-ZooKeeper
+## ZooKeeper
 1. 官网：https://zookeeper.apache.org/
 2. 中文介绍：https://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/index.html
 3. Zookeeper: 分布式过程协同技术详解 http://www.dengshenyu.com/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/2017/11/01/zookeeper.html?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
  
 
 
-Kafka
+## Kafka
 1. 官网：https://kafka.apache.org/documentation/#introduction
 2. producer  —>  broker —>  customers
 3. Kafka 用 Partitions 实现了高并发，Kafka 用 Partitions 复制 + Zookeeper 实现了高可用
@@ -348,12 +348,12 @@ Kafka
 15. kafka图表监控: KafkaOffsetMonitor
 
 
-Redis
+## Redis
 1. keys 列出所有键
 2. select index  切换库
 
 
-Docker
+## Docker
 1.  中文介绍：https://yeasy.gitbooks.io/docker_practice/content/introduction/
 2.  基本概念：镜像image、容器Container、仓库Repository
 3.  centos安装：https://yeasy.gitbooks.io/docker_practice/content/install/centos.html
@@ -361,7 +361,7 @@ Docker
 
 
 
-Swagger
+## Swagger
 1. 官网：https://swagger.io/
 2. swagger分两块：编辑器editor 与 展示swagger UI
 3. 编辑可以下载到本地起服务，也可以使用在线编辑器 http://editor.swagger.io/#/  导出为json 或者 yaml格式就行
@@ -395,7 +395,7 @@ Swagger
 
 
 
-python 3.6
+## python 3.6
 1. 安装python3，mac下  brew install python3
 2. 创建项目步骤：
     1. mkdir  project
@@ -408,7 +408,7 @@ python 3.6
 4. pip install 指定源：pip install -i https://pypi.doubanio.com/simple/ Keras
 
 
-django 1.11.4
+## django 1.11.4
 1. 官网：https://www.djangoproject.com/
 2. pip  install  django
 3. django-admin  startproject  mysite
@@ -472,14 +472,14 @@ django 1.11.4
 24.  django-debug-toolbar 插件查看慢查询
 
 
-django 部署
+## django 部署
 1.  gunicorn -b127.0.0.1:8001 -kgevent -w4 mysite.wsgi
 2.  uwsgi --ini uwsgi.ini --http :8001 --pidfile /tmp/uwsgi.pid
 3.  kill -HUP `cat /tmp/uwsgi.pid`    或者    kill -s QUIT `cat /tmp/uwsgi.pid`
 4.  uwsgi --reload /tmp/uwsgi.pid
 
 
-Git
+## Git
 1. git rm --cached xxx.xx    排除已经跟踪的文件
 2. git stash  此命令会将当前分支修改的文件临时保存起来
 3. git stash pop  取回保存起来的修改
@@ -494,7 +494,7 @@ Git
 12. git push origin :branch-name  推送一个空的分支 删除掉远程分支
 
 
-wkhtmltopdf
+## wkhtmltopdf
 1. yum install wkhtmltopdf
 2. yum install xorg-x11-server-Xvfb
 3. echo -e '#!/bin/bash\nxvfb-run -a --server-args="-screen 0, 1024x768x24" /usr/bin/wkhtmltopdf -q $*' > /usr/bin/wkhtmltopdf.sh
@@ -505,7 +505,7 @@ wkhtmltopdf
 8. 参数：https://wkhtmltopdf.org/usage/wkhtmltopdf.txt
 
 
-Mysql
+## Mysql
 1.  create database db_name DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 2.  CREATE DATABASE <dbname> CHARACTER SET utf8;
 3.  ALTER TABLE knowledge_category CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
@@ -526,7 +526,7 @@ Mysql
 16.  杀掉进程：SELECT concat('KILL ', id, ';') FROM information_schema.processlist WHERE db = 'ch_w_evaluation';
 
 
-samba
+## samba
 1.  yum install samba samba-client samba-swat
 2.  service smb start
 3.  vi /etc/samba/smb.conf
@@ -541,16 +541,16 @@ samba
 6.  testparm 测试有没有问题
 7.  service smb restart
 
-ssh 远程免密登陆 （mac）
+## ssh 远程免密登陆 （mac）
 1.  首先执行 ssh-keygen -t rsa  会在当前用户默认目录下生成 id_rsa(私钥) id_rsa.pub(公钥) 这两个文件
 2.  将公钥放到对应的服务器  scp  ~/.ssh/id_rsa.pub  root@192.168.11.111:/root/.ssh/
 3.  登陆远程服务器，将 .ssh 目录下的公钥追加到 authorized_keys 文件中   cat -n ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 4.  修改一下权限： chmod 644 ~/.ssh/authorized_keys
 
-双系统安装
+## 双系统安装
 https://segmentfault.com/a/1190000007215679
 
-supervisor 
+## supervisor 
 1. 参考：https://leehao.me/%E4%BD%BF%E7%94%A8-Supervisor-%E6%9D%A5%E7%AE%A1%E7%90%86-Redis-%E8%BF%9B%E7%A8%8B/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
 2.  运行：supervisord -c /etc/supervisor/supervisord.conf
 3. 查看状态：supervisorctl -c /etc/supervisor/supervisord.conf
@@ -567,7 +567,7 @@ supervisor
 8. 设置 stopasgroup = true，killasgroup = true 可以杀死子进程
 
 
-linux 常用命令
+## linux 常用命令
 1.  lsof -i:52000  查看端口
 2.  bash -c “sleep 15 && python”  这样可以延迟15秒执行命令
 3.  du -d1 -h .  查看当前文件夹大小情况 
@@ -586,41 +586,41 @@ linux 常用命令
     7.  umount /mnt/usb-fat32   卸载u盘
 
 
-Fabric
+## Fabric
 1. 官网：http://www.fabfile.org/installing.html
 2. 中文：http://fabric-chs.readthedocs.io/zh_CN/chs/tutorial.html
 
 
-Elasticsearch
+## Elasticsearch
 1.  权威指南 https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html
 
 
-brew
+## brew
 1. 更新brew自己：brew update
 2. 更新所有包：brew upgrade
 3. 清理老的包：brew cleanup
 
-TensorFlow
+## TensorFlow
 1. 官方中文文档：http://www.tensorfly.cn/
 
-手机端适配
+## 手机端适配
 http://www.jianshu.com/p/985d26b40199
 http://www.cnblogs.com/lyzg/p/4877277.html
 https://github.com/amfe/article/issues/17
 
-常用贝塞尔曲线
+## 常用贝塞尔曲线
 http://www.cnblogs.com/yansi/p/4012038.html
 
-代理服务 shadowsocks
+## 代理服务 shadowsocks
 http://vultr.aicnm.com/
 
-百度统计用法
+## 百度统计用法
 https://segmentfault.com/a/1190000002581832
 
-图片防盗链破解
+## 图片防盗链破解
 页面里用<img src="xxxx" />来引用其他网站的一张图片，但是他的网站设置了防盗链的策略，会在后台判断请求的Referrer属性是不是来自于一个非本域名的网站，如果来源不是本域名就返回403 forbidden。
 1. 全局：<meta name="referrer" content="never" />
 2. 局部：<img src="xxxx.jpg"  referrerPolicy="no-referrer" />
 
-cssSprite 雪碧图在线生成工具
+## cssSprite 雪碧图在线生成工具
 https://code.ahthw.com/tools/csssprite/
